@@ -1,0 +1,8 @@
+<%= form_with scope: :article, url: articles_path, local: true do |form| %>
+ 
+<h1>New article</h1>
+ 
+<%= render 'form', article: @article %>
+ 
+<%= link_to 'Back', articles_path %>
+<% end %>
